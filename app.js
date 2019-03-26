@@ -19,3 +19,31 @@ $(document).ready(function(){
     $("#modal2").modal("close")
     $("#modal1").modal("open")
   })
+   
+let optionNumber= 2;
+  $("#addMoreOptions").on("click", function(){
+optionNumber++;
+    let newInput= $("<input>");
+    newInput.attr("id", "option"+optionNumber);
+    newInput.attr("type", "text");
+   newInput.addClass("options")
+    let newButton= $("<button>")
+    newButton.addClass("btn", "btn-blue");
+    newButton.text("x");
+    newButton.attr("data-id","option"+optionNumber)
+newButton.addClass("optionDelete");
+    $("#moreOptions").append(newInput)
+    $("#moreOptions").append(newButton)
+  })
+    
+
+  $(document).on('click', '.optionDelete', function(){
+    let buttonID = $(this).attr("data-id")
+    console.log(buttonID);
+    $(".options").each(function(){
+      if(buttonID === $(this).attr("id")){
+        $(this).remove();
+      }
+    })
+    $(this).remove();
+  })
