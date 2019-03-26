@@ -69,10 +69,10 @@ margin-left:80px;
 }
 .jumbo{
     
-    height:500px;
+    min-height:500px;
     background-color: #ffffff;
-    opacity: .8;
     border-radius: 10px;
+    overflow:hidden;
 }
 .homeImage{
     max-height:300px;
@@ -80,9 +80,22 @@ margin-left:80px;
     opacity:1;
     margin:20px;
 }
-.solid{
-    opacity:1;
+.what{
+    border-radius:10px;
+}
+.what:hover{
+    background:#b6b5b5;
+  
 }
 h4{
     color: #086185;
+}
+.createPollContainer{
+    position:relative;
+    box-shadow: 5px 10px #b6b5b5;
+    border: 1px solid #b6b5b5;
+}
+#createPoll{
+    text-align:center;
+    font-family: 'Comfortaa', cursive;
 }
