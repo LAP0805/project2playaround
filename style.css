@@ -1,4 +1,8 @@
-
+body{
+    background-image: url("assets/images/hands.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 .nav-wrapper{
     background-color: #50b3da;
 }
@@ -11,7 +15,8 @@ h5{
     text-align:center;
 }
 .carousel{
-    height:500px!important;
+    height:400px!important;
+    margin:0px!important;
 }
 .carousel-item{
     background: #ffffff;
