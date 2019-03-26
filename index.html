@@ -17,8 +17,8 @@
     
         <div class="navBar">
            
-               <span class="navvy"><a href="#">Login</a></span>
-               <span class="navvy"><a href="#">Settings</a></span>
+               <span class="navvy"><button class="modal-trigger btn btn-blue" href="#modal1">Sign In/Sign Up</button></span>
+               
         
         </div>
     
@@ -62,8 +62,66 @@
 
         </div>
     </div>
-    
-      
+    <!--Modal sign-in-->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Sign-In</h4>
+          <div class="row">
+                <form class="col s12">
+                  
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                        <div class="input-field col s12">
+                          <input id="password" type="password" class="validate">
+                          <label for="password">Password</label>
+                        </div>
+                      </div>
+                </form>
+              </div>
+        </div>
+        <div class="modal-footer">
+                <a href="#"" id="modal2Open" class="modal-trigger">Create a new account &nbsp&nbsp</a>
+          <button class="btn btn-blue">Sign In</button>
+        </div>
+      </div>
+      <!--modal sign up-->
+      <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <h4>Create Account</h4>
+                  <div class="row">
+                        <form class="col s12">
+                          
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">Email</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                                <div class="input-field col s12">
+                                  <input id="password" type="password" class="validate">
+                                  <label for="password">Password</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                        <div class="input-field col s12">
+                                          <input id="password" type="password" class="validate">
+                                          <label for="password">Confirm Password</label>
+                                        </div>
+                                      </div>
+                        </form>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                        <a href="#" id="modal1Open" class="modal-trigger">Already have an account? &nbsp&nbsp</a>
+                  <button class="btn btn-blue">Sign In</button>
+                </div>
+              </div>
 
 
 
